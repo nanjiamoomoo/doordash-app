@@ -4,13 +4,15 @@ import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { login } from "../utils";
 import {useState} from "react";
 
-const LoginForm = () => {
+//this login form collect user input and execute a login request
+const LoginForm = (props) => {
     const [loading, setLoading] = useState(false);
     const onFinish = (data) => {
         setLoading(true);
         login(data)
             .then(() => {
                 message.success('Login Successful')
+                props.onSuccess();
             })
             .catch((err)=> {
                 message.error(err.message);
@@ -44,7 +46,7 @@ const LoginForm = () => {
                 <Input.Password prefix = {<LockOutlined />} placeholder="Password"/>
             </Form.Item>
 
-            <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Form.Item >
                 <Button type="primary" htmlType="submit" loading={loading}>
                     Login
                 </Button>
