@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Doordash-app
 
+## **Project Description**
+A doordash like online food order web application that allows users order food online (_This repository only includes the frontend portion of the project_).
+
+## **Framework**
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## **Main Components**
+**_`App.js`_** Defined the layout of the app
+
+**_`LoginForm.js`_** Used for collecting user login info and executing a login request.
+
+**_`SignupForm.js`_** Used for new user registration.
+
+**_`MenuItemList.js`_** Display all restaurants info and menus info after selecting restaurant. Included function to add items to the shopping cart.
+
+**_`MyCart.js`_** Display shopping cart and included checkout function.
+
+**_`utils.js`_** Defined all APIs.
+
 
 ## Available Scripts
 

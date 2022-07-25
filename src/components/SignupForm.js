@@ -4,7 +4,8 @@ import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { signup } from "../utils";
 import {useState} from "react";
 
-//signup form, used Modal to create a floating signup form over current page
+//New user signup form
+//Used Modal to create a floating signup form over current page
 const SignupForm = () => {
     const [loading, setLoading] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);

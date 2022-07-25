@@ -4,7 +4,8 @@ import {checkout, getCart} from "../utils";
 
 const { Text } = Typography;
 
-//Used drawer for shopping cart. Implemented shopping cart display and checkout
+//Display shopping cart and included checkout function
+//Used Drawer for shopping cart.
 const MyCart = () => {
     const [cartVisible, setCartVisible] = useState(false);
     const [cartData, setCartData] = useState();
