@@ -23,7 +23,7 @@ const MyCart = () => {
         setChecking(true);
         checkout()
             .then(() => {
-                message.success("Checkout successfully");
+                message.success("Successfully checkout");
                 setCartVisible(false);
             })
             .catch((err) => {
