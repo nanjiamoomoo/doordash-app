@@ -4,7 +4,7 @@ import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { login } from "../utils";
 import {useState} from "react";
 
-//this login form collect user input and execute a login request
+//login form to collect user input and execute a login request
 const LoginForm = (props) => {
     const [loading, setLoading] = useState(false);
     const onFinish = (data) => {

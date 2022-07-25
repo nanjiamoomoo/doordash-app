@@ -3,6 +3,7 @@ import LoginForm from "./components/LoginForm";
 import SignupForm from "./components/SignupForm";
 import MenuItemList from "./components/MenuItemList"
 import {useState} from "react";
+import MyCart from "./components/MyCart";
 
 const { Header, Content } = Layout;
 const { Title } = Typography;
@@ -16,10 +17,11 @@ const App = () => {
             <Header>
                 <Title
                     level={2}
-                    style={{color: "white", lineHeight: "inherit"}}
+                    style={{color: "white", lineHeight: "inherit", marginBottom: 0 }}
                 >
                     Food Court
                 </Title>
+                <div>{authenticated ? <MyCart /> : <SignupForm />}</div>
             </Header>
             <Content
                 style={{
@@ -28,8 +30,6 @@ const App = () => {
                     overFLowY: "auto"
                 }}
             >
-
-                <SignupForm/>
                 {
                     authenticated?
                          <MenuItemList />
